@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Creator - Figma UI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="layers">
+                <h2>Creatvise</h2>
+                <small>Creatvise coding assesment</small>
+            </div>
+        </div>
+
+        <!-- Main Canvas Area -->
+        <div class="canvas-container">
+            <canvas id="shapeCanvas" width="600" height="400"></canvas>
+        </div>
+
+        <!-- Right Control Panel -->
+        <div class="control-panel">
+            <h2>Controls</h2>
+
+            <!-- Shape Selection -->
+            <label for="shapeSelect">Shape</label>
+            <select id="shapeSelect">
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="ellipse">Ellipse</option>
+            </select>
+
+            <!-- Border Radius -->
+            <label for="borderRadius">Border Radius</label>
+            <input type="range" id="borderRadius" min="0" max="100" value="0">
+            <span id="radiusValue">0</span>px
+
+            <!-- Fill Color -->
+            <label for="fillColor">Fill Color</label>
+            <input type="color" id="fillColor" value="#007bff">
+
+            <!-- Border Color -->
+            <label for="borderColor">Border Color</label>
+            <input type="color" id="borderColor" value="#000000">
+
+            <!-- Border Width -->
+            <label for="borderWidth">Border Width</label>
+            <input type="range" id="borderWidth" min="1" max="10" value="2">
+            <span id="borderWidthValue">2</span>px
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
